@@ -1,0 +1,30 @@
+html{
+height: 1vh 1vw;
+}
+body{
+background:#310000;
+height: 100%; /*background: #310000;*/
+margin: 0;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+h1{
+color: #e6475c;
+font-family: 'Kode Mono';
+font-size: 80px;
+font-weight: bolder;
+text-align: center;
+margin: auto;
+padding-top: 15vh;
+}
+.enlaces{
+color: #e6475c;
+align-content: center;
+font-family: monospace;
+font-size: 20px;
+text-decoration: none;
+text-align: center;
+}
+.enlaces:hover{
+	color:#fff;
+}

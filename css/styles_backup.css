@@ -1,0 +1,49 @@
+html{
+height: 1vh 1vw;
+}
+body{
+background: linear-gradient(#610000, #310000);
+height: 100%; /*background: #310000;*/
+margin: 0;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+h1{
+color: #e6475c;
+font-family: 'Kode Mono';
+font-size: 80px;
+font-weight: bolder;
+}
+h2{
+text-align: center;
+color: #e6475c;
+font-family: monospace;
+}
+.borders{
+text-align: center;
+padding: 20px;
+margin: auto;
+border: 5px solid #821217;
+margin-top: 5vh; /* el original es 5px */
+}
+.secciones{
+text-align: center;
+margin-left: 25vw;
+margin-right: 25vw;
+width: 10%;
+height: 10vh;
+border-top: 2px solid #a4242e;
+background: linear-gradient(to top, transparent 5%, #54242e);
+padding: 15px;
+}
+.enlace{
+color: #e6475c;
+margin: auto;
+font-family: monospace;
+font-size: 20px;
+text-decoration: none;
+}
+.separacion{
+margin-top: 5vh; /* el original es 20px */
+margin-bottom: 5vh; /* el original es 25px*/
+}
