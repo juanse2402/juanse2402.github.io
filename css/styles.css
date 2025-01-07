@@ -28,3 +28,32 @@ text-align: center;
 .enlaces:hover{
 	color:#fff;
 }
+
+.lista_juegos{
+color: #e6475c;
+align-content: center;
+font-family: monospace;
+font-size: 20px;
+text-decoration: none;
+text-align: center;
+}
+.enlaces:hover{
+	color:#fff;
+}
+
+.ul_nav {
+font-family: monospace;
+font-size: 20px;
+color: #e6475c;
+text-decoration: none;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: 50px;
+color: #e6475c;
+}
+
+.li_nav {
+display: grid;
+justify-content: center;
+align-items: center;
+}
