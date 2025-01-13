@@ -17,6 +17,18 @@ text-align: center;
 margin: auto;
 padding-top: 15vh;
 }
+#seccion{
+font-family: 'Kode Mono';
+font-size: 40px;
+font-weight: 400;
+margin: auto;
+padding-top: 5vh;
+padding-left: 15vh;
+}
+._seccion {
+  color: #310000;
+  background-color: #e6475c;
+}
 .enlaces{
 color: #e6475c;
 align-content: center;
