@@ -7,6 +7,7 @@ height: 100%; /*background: #310000;*/
 margin: 0;
 background-repeat: no-repeat;
 background-attachment: fixed;
+padding-bottom: 3rem;
 }
 h1{
 color: #e6475c;
@@ -16,18 +17,6 @@ font-weight: bolder;
 text-align: center;
 margin: auto;
 padding-top: 15vh;
-}
-#seccion{
-font-family: 'Kode Mono';
-font-size: 40px;
-font-weight: 400;
-margin: auto;
-padding-top: 5vh;
-padding-left: 15vh;
-}
-._seccion {
-  color: #310000;
-  background-color: #e6475c;
 }
 .enlaces{
 color: #e6475c;
@@ -41,6 +30,56 @@ text-align: center;
 	color:#fff;
 }
 
+.galeria-juegos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 1rem; /* espacio entre los elementos */
+  padding: 1.5rem;
+  justify-items: center;
+}
+
+.juego-icono {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 15px;
+  align-items: center;
+  text-decoration: none;
+  color: #e6475c;
+  transition: color 0.3s ease;
+}
+
+.juego-icono:hover {
+  color: #fff;
+}
+
+.juego-icono img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.juego-icono:hover img {
+  transform: scale(1.1);
+}
+
+.juego-icono p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.texto{
+color: #e6475c;
+align-content: center;
+font-family: monospace;
+font-size: 20px;
+text-decoration: none;
+text-align: left;
+margin: 30px;
+}
+
 .lista_juegos{
 color: #e6475c;
 align-content: center;
@@ -49,8 +88,35 @@ font-size: 20px;
 text-decoration: none;
 text-align: center;
 }
-.enlaces:hover{
-	color:#fff;
+
+.screenshot {
+  max-width: 50%;
+  display: block;
+  margin: 1rem auto;
+  border: 2px solid #e6475c;
+}
+
+.parpadeo-suave {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: #310000;
+  animation: parpadeoSuave 2s infinite ease-in-out;
+  border-radius: 8px; /* opcional, para que se vea más prolijo */
+}
+
+@keyframes parpadeoSuave {
+  0%   { background-color: #310000; }
+  50%  { background-color: #4d0000; }
+  100% { background-color: #310000; }
+}
+
+.logo {
+  display: flex;
+  max-width: 25%;
+  max-height: 25%;
+  margin: 1rem auto;
 }
 
 .ul_nav {
