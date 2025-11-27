@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar contenido";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr;
+    gap: 5px;
+    height: 100vh;
+    background-color:#00a8a8;
+}
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    color: black;
+    font-size: 40px;
+    padding: 20px;
+}
+
+  aside {
+    grid-area: sidebar;
+    border: 5px groove #c0c0c0;
+    background-color: #c0c0c0;
+    color: #000000;
+    font-family: W95Font, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+  aside ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  main {
+    grid-area: contenido;
+    background-color: #c0c0c0;
+    border: 5px groove #c0c0c0;
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: #000000;
+}
+
+.logo{
+    scale: 50%;
+    border: #00ff00;
+}
+
+a.seccion {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  font-family: 'MS Sans Serif', Tahoma, sans-serif;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  border: 2px solid #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
+}
+
+a.seccion:active {
+  border: 2px solid #808080;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
+}
+
+
+
+
+
+
+
+/*  FUENTES */
+
+@font-face {
+    font-family: "Science Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fuentes/science-gothic-latin-400-normal.woff2") format("woff2"),
+         url("fuentes/science-gothic-latin-400-normal.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+                   U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+                   U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+                   U+2212, U+2215, U+FEFF, U+FFFD;
+  }  
+
+  @font-face {
+    font-family: 'W95Font';
+    src: url('../fonts/w95font/webfont/w95font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'W95Font';
+    src: url('fonts/w95font/webfont/w95font-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+ 
+  

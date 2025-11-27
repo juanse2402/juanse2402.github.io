@@ -1,0 +1,80 @@
+.titulo_seccion{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.cuerpo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+.juego-icono {
+    max-width: 16px;
+    max-height: 16px;
+    align-content: center;
+    border: 2px solid #fff;
+    box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
+
+  }
+
+
+a.enlace {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  font-family: 'MS Sans Serif', Tahoma, sans-serif;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  border: 2px solid #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
+}
+
+a.enlace:active {
+  border: 2px solid #808080;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
+}
+  
+  /*  FUENTES */
+
+@font-face {
+    font-family: "Science Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fuentes/science-gothic-latin-400-normal.woff2") format("woff2"),
+         url("fuentes/science-gothic-latin-400-normal.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+                   U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+                   U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+                   U+2212, U+2215, U+FEFF, U+FFFD;
+  }  
+
+  @font-face {
+    font-family: 'W95Font';
+    src: url('../fonts/w95font/webfont/w95font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'W95Font';
+    src: url('fonts/w95font/webfont/w95font-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Hand-Pixel';
+    src: url('fonts/rdj-hand-pixel/RDJ-HandPixl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
