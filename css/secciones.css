@@ -11,8 +11,8 @@
   }
 
 .juego-icono {
-    max-width: 16px;
-    max-height: 16px;
+    max-width: 32px;
+    max-height: 32px;
     align-content: center;
     border: 2px solid #fff;
     box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
@@ -41,6 +41,12 @@ a.enlace:active {
   border-bottom-color: #fff;
   box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
 }
+
+il{
+  border-bottom: #000 dotted; 
+}
+
+
   
   /*  FUENTES */
 
