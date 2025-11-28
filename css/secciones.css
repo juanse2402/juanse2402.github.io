@@ -42,8 +42,32 @@ a.enlace:active {
   box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
 }
 
-il{
-  border-bottom: #000 dotted; 
+.consolas{
+  font-family: "Hand-Pixel", "W95Font", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+a.enlace_roms {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  font-family: "W95Font", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: dotted;
+  background-color: #c0c0c0;
+  border: 2px solid #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
+}
+
+a.enlace_roms:active {
+  border: 2px solid #808080;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
 }
 
 
