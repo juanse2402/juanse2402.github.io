@@ -1,60 +1,26 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "sidebar contenido";
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 80px 1fr;
-    gap: 5px;
-    height: 100vh;
-    background-color:#00a8a8;
-}
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: header;
-    color: black;
+.titulo_seccion{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
-    padding: 20px;
+    text-decoration: underline;
 }
 
-  aside {
-    grid-area: sidebar;
-    border: 5px groove #c0c0c0;
-    background-color: #c0c0c0;
-    color: #000000;
-    font-family: W95Font, sans-serif;
+.cuerpo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     font-size: 20px;
-    padding: 20px;
-}
-
-  aside ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
   }
 
-  main {
-    grid-area: contenido;
-    background-color: #c0c0c0;
-    border: 5px groove #c0c0c0;
-    padding: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: larger;
-    color: #000000;
-}
+.juego-icono {
+    max-width: 32px;
+    max-height: 32px;
+    align-content: center;
+    border: 2px solid #fff;
+    box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
 
-.logo{
-    scale: 50%;
-    border: #00ff00;
-}
+  }
 
-a.seccion {
+
+a.enlace {
   display: inline-block;
   padding: 6px 12px;
   margin: 4px;
@@ -69,7 +35,35 @@ a.seccion {
   box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
 }
 
-a.seccion:active {
+a.enlace:active {
+  border: 2px solid #808080;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
+}
+
+.consolas{
+  font-family: "Hand-Pixel", "W95Font", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+a.enlace_roms {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  font-family: "W95Font", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: dotted;
+  background-color: #c0c0c0;
+  border: 2px solid #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #fff;
+}
+
+a.enlace_roms:active {
   border: 2px solid #808080;
   border-right-color: #fff;
   border-bottom-color: #fff;
@@ -77,12 +71,8 @@ a.seccion:active {
 }
 
 
-
-
-
-
-
-/*  FUENTES */
+  
+  /*  FUENTES */
 
 @font-face {
     font-family: "Science Gothic";
@@ -112,5 +102,9 @@ a.seccion:active {
     font-style: normal;
   }
   
- 
-  
+  @font-face {
+    font-family: 'Hand-Pixel';
+    src: url('fonts/rdj-hand-pixel/RDJ-HandPixl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
