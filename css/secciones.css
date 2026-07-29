@@ -19,6 +19,11 @@
 
   }
 
+  .icono {
+    max-width: 32px;
+    max-height: 32px;
+    align-content: center;
+  }
 
 a.enlace {
   display: inline-block;
