@@ -1,25 +1,22 @@
 body {
     margin: 0;
-    font-family: sans-serif;
     display: grid;
     grid-template-areas:
-      "header header"
-      "sidebar contenido";
+        "header header"
+        "sidebar contenido";
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: auto 1fr;
     gap: 5px;
-    height: 100vh;
-    background-color:#00a8a8;
+    min-height: 100vh;
+    background-color: #00a8a8;
 }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
     grid-area: header;
-    color: black;
-    font-size: 40px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
   aside {
@@ -49,9 +46,11 @@ body {
     color: #000000;
 }
 
-.logo{
-    scale: 50%;
-    border: #00ff00;
+.logo {
+    display: block;
+    width: 512px;
+    max-width: 100%;
+    height: auto;
 }
 
 a.seccion {
@@ -76,11 +75,18 @@ a.seccion:active {
   box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
 }
 
+aside h2{
+    margin-top:0;
+    margin-bottom:15px;
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+    font-size:22px;
+  }
 
-
-
-
-
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
 
 /*  FUENTES */
 
@@ -112,5 +118,57 @@ a.seccion:active {
     font-style: normal;
   }
   
- 
-  
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "contenido";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 512px;
+        height: auto;
+    }
+
+    aside {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    aside ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    aside li {
+        margin: 0;
+    }
+
+    main {
+        padding: 10px;
+        min-height: 70vh;
+    }
+
+    iframe {
+        width: 100%;
+        height: 75vh;
+        border: none;
+    }
+
+}
